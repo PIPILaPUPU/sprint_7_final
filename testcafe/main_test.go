@@ -121,7 +121,7 @@ func TestCafeSearch(t *testing.T) {
 		lowerWord := strings.ToLower(item.search)
 		for _, cafe := range cafes {
 			cafe = strings.ToLower(cafe)
-			assert.True(t, strings.Contains(cafe, lowerWord), "Кафе '%s' должно содержать '%s'", cafe, item.search)
+			assert.True(t, strings.Contains(cafe, lowerWord), "Cafe '%s' must contain '%s'", cafe, item.search)
 		}
 	}
 }
